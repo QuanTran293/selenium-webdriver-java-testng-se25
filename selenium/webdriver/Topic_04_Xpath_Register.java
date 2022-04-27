@@ -1,5 +1,6 @@
 package webdriver;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -10,9 +11,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_04_Xpath_Part_II {
+public class Topic_04_Xpath_Register {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
+	String firstName, lastName, emailAddress, password;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -20,6 +22,11 @@ public class Topic_04_Xpath_Part_II {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		
+		firstName = "Automation";
+		lastName = "FC";
+		emailAddress = "afc" + generateRandomNumber() + "@hotmail.com";
+		password = "12345678";
 	}
 
 	@Test
@@ -152,6 +159,11 @@ public class Topic_04_Xpath_Part_II {
 				
 		// Kiem tra 1 dk tra ve la mong muon
 		Assert.assertEquals(driver.findElement(By.id("txtPhone-error")).getText(), "Số điện thoại bắt đầu bằng: 09 - 03 - 012 - 016 - 018 - 019");
+	}
+	public int generateRandomNumber() {
+		Random rand = new Random();
+		return rand.nextInt(99999);
+		
 	}
 	@AfterClass
 	public void afterClass() {
