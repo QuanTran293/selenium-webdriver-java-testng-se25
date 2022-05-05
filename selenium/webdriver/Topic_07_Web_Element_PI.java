@@ -17,7 +17,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_07_Web_Browser {
+public class Topic_07_Web_Element_PI {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 
@@ -122,10 +122,21 @@ public class Topic_07_Web_Browser {
 		 element.isEnabled();
 		 
 		 // click vào 1 element:
-		 // Button/ linl/ checkbox/ radio/ image/ icon/...
+		 // Button/ link/ checkbox/ radio/ image/ icon/...
 		 element.click();
 
-
+		 // giống hành vi ENTER ở các form
+		 // Dùng cho tag name: form (element con bên trong)
+		 element.submit();
+		 
+		 // CLick lên Slider và giữ chuột
+		 // Sau đó kéo Slider này 1 tọa độ bao nhiêu pixel
+		 // Kéo tới 1 element khác
+		 //action.clickAndHold(element).moveToElement(element).perform();
+		 
+		 
+		 
+		 
 	}
 	
 	@AfterClass
