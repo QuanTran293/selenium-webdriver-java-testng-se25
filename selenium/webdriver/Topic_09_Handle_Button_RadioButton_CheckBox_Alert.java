@@ -233,6 +233,46 @@ driver.get("https://demos.telerik.com/kendo-ui/checkbox/index");
 		driver.quit();
 	}
 	
+	
+	@Test
+	public void TC_05_Custom_Radio() {
+	driver.get("https://material.angular.io/components/radio/examples");
+	
+	// defaul Redio/Check box
+	
+	// Action: Selenium WebElement click
+	
+	// Verify: isSelected
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	@Test
+	public void TC_06_Custom_Checkbox() {
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	public void sleepInSecond(long second) {
 	try {
 		Thread.sleep(second * 1000);

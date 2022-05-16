@@ -12,7 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_09_Handle_Dropdown {
+public class Topic_09_Handle_Default_Dropdown {
 	WebDriver driver;
 	Select select;
 	String firstName, lastName, day, month, year, companyName, password, emailAddress;
@@ -37,7 +37,7 @@ public class Topic_09_Handle_Dropdown {
 	}
 
 	@Test
-	public void TC_01_ValidateCurrentUrl() {
+	public void TC_01_nopcommerce() {
 		driver.get("https://demo.nopcommerce.com/register");
 		
 		// Action ( input data)
