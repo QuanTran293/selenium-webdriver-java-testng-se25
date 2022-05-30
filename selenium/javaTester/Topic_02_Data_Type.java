@@ -3,8 +3,9 @@ package javaTester;
 import java.util.Random;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-public class Topic_01_Data_Type {
+public class Topic_02_Data_Type {
 
 	public static	void main(String[] args) {
 		// khai báo biến : Kiểu dữ liệu + tên biến
@@ -43,16 +44,29 @@ public class Topic_01_Data_Type {
 		// char: a = 'B';
 		
 		// II - Tham chiếu ( Reference)
+		//String
+		String address = "Ho Chi Minh";
+		
 		// Array
-		int[] studentNumbers = {15, 50, -7, 19};
+		int[] studentNumber1 = {15, 50, -7, 19};
 		String[] studentName = {"Nguyễn Văn Nam", "Ngô Văn Tới"};
 		
-		// Interface/Class
+		//Class
+		//Topic_02_Data_type topic;
+		
+		
+		// Interface
+		WebDriver driver;
+		
+		//Object
+		Object aobject;
+		
 		// WebDriver driver = new ChromeDriver ();
 		
 		// Actions action = new Actions (driver);
 		
 		// Collection: List (ArrayList/ LinkedList)/ Set/ Queue
+		
 		// ArrayList<String> studentCountry = new ArrayList<String>();
 		
 		// Object

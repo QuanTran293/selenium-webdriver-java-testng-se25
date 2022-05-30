@@ -1,7 +1,8 @@
+
 package javaTester;
 
 import java.util.Random;
-public class Topic_03_Random {
+public class Topic_99_Random {
 
 	public static	void main(String[] args) {
 		Random rand = new Random();
